@@ -1,0 +1,16 @@
+title: LEARNING HOW TO BITHUB-FUN
+description: 'Learn the fundamentals for the fun stuff to do using G-Hub. '
+template:
+  repo: learning-how-to-bithub-fun-template
+  name: learning-how-to-bithub-fun
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
